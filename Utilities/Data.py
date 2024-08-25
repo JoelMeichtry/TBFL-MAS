@@ -13,7 +13,7 @@ class Data():
         classes_of_data_object_per_agent = list(
             np.random.choice(args.number_of_classes_in_dataset, number_of_classes))
 
-        for i in range(len(classes_of_data_object_per_agent)):
+        for i in classes_of_data_object_per_agent:
             batch_size_per_classes[str(i)] = batch_size_options[np.random.randint(len(batch_size_options))]
 
     # prepare dataset for learning and predicting

@@ -19,7 +19,7 @@ class TestData(unittest.TestCase):
             self.assertIn(batch_size_per_classes[i], batch_size_options)
 
         # assert reproducibility
-        batch_sizes = {'0': 200, '1': 30, '2': 100, '3': 500, '4': 300, '5': 1000}
+        batch_sizes = {'0': 200, '3': 1000, '7': 500, '9': 300}
         self.assertDictEqual(batch_sizes, batch_size_per_classes)
 
     def test_prepare_dataset(self):
